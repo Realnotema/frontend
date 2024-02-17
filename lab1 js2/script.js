@@ -101,7 +101,7 @@ function isBalanced(str) {
 document.getElementById('task4').addEventListener('submit', function(event) {
     event.preventDefault();
     var inputString = document.getElementById('text4').value;
-    var stack = [];
+    //var stack = [];
 
     for (let i = 0; i < inputString.length; i++) {
         if (inputString[i] === '(') {

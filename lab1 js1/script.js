@@ -57,7 +57,7 @@ document.getElementById('task2').addEventListener('submit', function(event) {
 	var numb = parseInt(document.getElementById('count').value);
     let list = [];
 
-    for (let num = 2; list.length < n; num++) {
+    for (let num = 2; list.length < numb; num++) {
         if (checkPrime(num)) list.push(num);
     }
 
