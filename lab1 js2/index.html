@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fundamentals of JavaScript 1</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Fundamentals of JavaScript 2</h1>
+    <p>Цыганков Артем Б21-525</p>
+
+	<button class="btn" data-path="modal1">Задание 1</button>
+	<button class="btn" data-path="modal2">Задание 2</button>
+    <button class="btn" data-path="modal3">Задание 3</button>
+    <button class="btn" data-path="modal4">Задание 4</button>
+    <button class="btn" data-path="modal5">Задание 5</button>
+
+	<div class="modals">
+		<div class="modal-overlay">
+			<div class="modal modal--1" data-target="modal1">
+                <p>Задание 1<br></br></p>
+                <p>Сделайте программу, которая принимает на вход список натуральных чисел и возвращает отсортированный в порядке возрастания список.<br></br></p>
+                <form id="task1">
+                    <input type="text" id="number1">
+                    <input type="submit" value="submit">
+                </form> 
+                <p id="result1"></p>
+			</div>
+			<div class="modal modal--2" data-target="modal2">
+				<p>Задание 2<br></br></p>
+                <p>Сделайте функцию, которая принимает на вход массив натуральных чисел. И возвращает массив остатков от деления этих чисел на 5.<br></br></p>
+                <form id="task2">
+                    <input type="text" id="number2">
+                    <input type="submit" value="submit">
+                </form> 
+                <p id="result2"></p>
+			</div>
+            <div class="modal modal--2" data-target="modal3">
+				<p>Задание 3<br></br></p>
+                <p>Реализуйте функцию, которая принимает произвольное количество числовых аргументов и возвращает их медиану. Вызовите эту функцию 2-мя способами: классической передачей аргументов через запятую и с помощью распаковки аргументов из заранее созданного массив<br></br></p>
+                <form id="task3">
+                    <input type="text" id="number3">
+                    <input type="submit" value="submit">
+                </form> 
+                <p id="result3.1"></p>
+                <p id="result3.2"></p>
+			</div>
+            <div class="modal modal--2" data-target="modal4">
+				<p>Задание 4<br></br></p>
+                <p>Реализуйте с помощью стека следующую программу. На вход подается строка состоящая из открывающих “(” и закрывающих “)” скобок, например “(())()()”. Правильной скобочной строкой называется строка, где каждой закрывающей скобке найдётся соответствующая открывающая. Определить, является ли строка правильной и вывести “Правильная”/”Неправильная”<br></br></p>
+                <form id="task4">
+                    <input type="text" id="text4">
+                    <input type="submit" value="submit">
+                </form> 
+                <p id="result4"></p>
+			</div>
+            <div class="modal modal--2" data-target="modal5">
+                <p>Задание 5<br></br></p>
+                <p>Сделайте функцию, принимающую на вход объект с различными свойствами (без методов) и возвращающую его копию (так чтобы копия указывала на другую область памяти). Входной объект может содержать другие объекты и массивы любой вложенности, которые также должны быть скопированы.<br></br></p>
+                <p>Написано в script.js</p>
+                <p id="result5"></p>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
