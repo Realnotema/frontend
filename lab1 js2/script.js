@@ -31,7 +31,7 @@ document.getElementById('task1').addEventListener('submit', function(event) {
     var inputString = document.getElementById('number1').value;
     var number = inputString.split(',').map(Number);
     number.sort(function cmp(a, b){
-        return a - b
+        return b - a
     })
     var sortedString = number.join(', ');
     document.getElementById('result1').textContent = sortedString;
@@ -101,8 +101,6 @@ function isBalanced(str) {
 document.getElementById('task4').addEventListener('submit', function(event) {
     event.preventDefault();
     var inputString = document.getElementById('text4').value;
-    //var stack = [];
-
     for (let i = 0; i < inputString.length; i++) {
         if (inputString[i] === '(') {
             stack.push('(');
