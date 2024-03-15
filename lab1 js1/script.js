@@ -29,7 +29,7 @@ modalOverlay.addEventListener('click', (e) => {
 document.getElementById('task1').addEventListener('submit', function(event) {
     event.preventDefault();
     var monthNumber = parseInt(document.getElementById('monthNumber').value);
-
+    
     if (monthNumber >= 1 && monthNumber <= 12) {
         var months = [
             "Январь",
