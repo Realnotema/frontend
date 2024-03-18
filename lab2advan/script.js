@@ -1,7 +1,7 @@
 
 function FirstTask() {
     let count = localStorage.getItem('pageReloadCount');
-    if (count === null) {
+    if (count === null || isNaN(count) === true) {
         count = 1;
     } else {
         count = parseInt(count) + 1;
@@ -48,7 +48,7 @@ async function loadImage(url) {
     });
 }
 
-async function ThirdTask() {
+function ThirdTask() {
     let imageUrls = [];
 
     for (let i = 0; i < 5; i++) {
@@ -66,7 +66,7 @@ async function ThirdTask() {
 
     try {
         for (const url of imageUrls) {
-            const img = await loadImage(url);
+            const img = loadImage(url);
             imageContainer.appendChild(img);
             const emptyLine = document.createElement('br');
             imageContainer.appendChild(emptyLine);
@@ -124,7 +124,7 @@ async function FifthTask() {
     for (const ip of ips) {
         const url = `https://json.geoiplookup.io/${ip}`;
         const response = await fetch(url);
-        const data = await response.json();
+        const data = await respons.json();
         
         if (countries.includes(data.country_name)) {
             alert(`Our services are not available in your country ${data.country_name}`);

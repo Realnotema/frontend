@@ -1,3 +1,5 @@
+Array.prototype.reverse = dublicateArray
+
 class User {
     constructor(name, age) {
         this.name = name;
@@ -83,9 +85,11 @@ class UserNew3 {
   }
   
 class Student extends UserNew3 {
+  #knowledge
+
     constructor(name, age) {
         super(name, age);
-        this.knowledge = 0;
+        this.#knowledge = 0;
     }
   
     learn() {
@@ -97,6 +101,6 @@ class Student extends UserNew3 {
     }
   }
 
-Array.prototype.reverse = function() {
+  const dublicateArray = () => {
     return [...this, ...this];
-};
+  };
